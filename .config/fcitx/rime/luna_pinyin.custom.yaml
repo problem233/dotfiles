@@ -1,0 +1,44 @@
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 西文 ]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: simplification
+      reset: 1
+      states: [ 漢字, 汉字 ]
+  'speller/algebra':
+    - derive/([ei])n$/$1ng/
+    - derive/([ei])ng$/$1n/
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqx])u$/$1v/
+  punctuator:
+    import_preset: symbols
+    full_shape:
+      '<' : [《, 〈]
+      '>' : [》, 〉]
+      '/' : ÷
+      '\' : 、
+      '|' : ｜
+      '`' : ·
+      '@' : ＠
+      '#' : ＃
+      '%' : ％
+      '$' : ￥
+      '*' : ×
+      '=' : ＝
+    half_shape:
+      '<' : [《, 〈]
+      '>' : [》, 〉]
+      '/' : ÷
+      '\' : 、
+      '|' : '|'
+      '`' : ·
+      '@' : '@'
+      '#' : '#'
+      '~' : '~'
+      '%' : '%'
+      '$' : ￥
+      '*' : ×
+      '=' : '='

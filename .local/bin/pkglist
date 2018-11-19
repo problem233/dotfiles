@@ -1,0 +1,45 @@
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+[ -f ~/.pkglist ] && echo "~/.pkglist mustn't' be a file!" && exit 1
+[ -d ~/.pkglist ] || mkdir ~/.pkglist
+
+PKGLIST=~/.pkglist/pkglist
+NPM_PKGLIST=~/.pkglist/npm_pkglist
+
+function repo-pkgs { pacman -Slq | sort; }
+function installed-pkgs { pacman -Qq | sort; }
+function pkglist { sort < "$PKGLIST"; }
+
+case ${1:-help} in
+backup)
+  pacman -Qeq | sort > "$PKGLIST"
+  ;;
+load)
+  sudo pacman -S --needed $(comm -12 <(pkglist) <(repo-pkgs))
+  ;;
+load-aur)
+  yay -Su --aur
+  yay -S --needed $(comm -23 <(pkglist) <(repo-pkgs) | comm -13 <(installed-pkgs) -)
+  ;;
+edit-npm)
+  eval "${EDITOR:-nano}" "$NPM_PKGLIST"
+  ;;
+load-npm)
+  npm i -g --prefix ~/.local $(< "$NPM_PKGLIST")
+  ;;
+*)
+  cat << EOF
+Usage:
+  $0 <subcommand>
+
+Subcommands:
+  backup    Backup your pkglist.
+  load      Load your pkglist (repo packages only).
+  load-aur  Load your pkglist (aur packages only).
+  edit-npm  Edit your npm pkglist.
+  load-npm  Load your npm pkglist.
+EOF
+  ;;
+esac

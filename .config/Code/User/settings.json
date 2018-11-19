@@ -1,0 +1,54 @@
+{
+  // window =========================
+  "window.titleBarStyle": "custom",
+  // editor =========================
+  // "editor.fontFamily": "'Noto Sans Mono CJK SC'", /*
+  "editor.fontFamily":
+    "'Fira Code', 'Noto Sans CJK SC', 'FuraCode Nerd Font', monosapce", // */
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.renderIndentGuides": false,
+  //"editor.renderWhitespace": "boundary",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.rulers": [80],
+  "editor.minimap.enabled": false,
+  "[markdown]": {
+      "editor.rulers": [],
+      "editor.wordWrap": "on",
+      "editor.occurrencesHighlight": false,
+  },
+  // workbench ======================
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.settings.editor": "json",
+  // explorer =======================
+  "explorer.confirmDelete": false,
+  // files ==========================
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": false,
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true
+  },
+  // terminal =======================
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  // git ============================
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  // haskell ========================
+  "haskell.indentationRules.enabled": false,
+  // markdown =======================
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  // vsicons ========================
+  "vsicons.dontShowNewVersionMessage": true,
+}  
