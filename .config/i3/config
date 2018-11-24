@@ -81,7 +81,7 @@ bindsym $mod+Shift+5 move workspace $ws5
 bindsym $mod+Shift+6 move workspace $ws6
 bindsym $mod+Shift+7 move workspace $ws7
 bindsym $mod+Shift+8 move workspace $ws8
-bindsym $mod+Shift+9 move workspace $ws8
+bindsym $mod+Shift+9 move workspace $ws9
 bindsym $mod+Shift+0 move workspace $ws10
 bindsym $mod+Shift+minus move scratchpad
 

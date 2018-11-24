@@ -1,6 +1,6 @@
 [Added Associations]
 application/x-shellscript=vim.desktop;
-image/jpeg=geeqie.desktop;firefox.desktop;
+image/jpeg=firefox.desktop;
 text/plain=visual-studio-code.desktop;wine-extension-txt.desktop;
 application/x-yaml=visual-studio-code.desktop;wine-extension-txt.desktop;
 image/png=geeqie.desktop;
@@ -17,6 +17,7 @@ text/html=firefox.desktop;
 application/msword=calibre-ebook-viewer.desktop;calibre-gui.desktop;
 application/epub+zip=calibre-ebook-viewer.desktop;
 application/x-executable=visual-studio-code.desktop;
+application/pdf=firefox.desktop;calibre-ebook-viewer.desktop;
 
 [Default Applications]
 application/x-yaml=visual-studio-code.desktop
@@ -26,3 +27,4 @@ text/plain=visual-studio-code.desktop
 application/vnd.rar=xarchiver.desktop
 text/html=firefox.desktop
 application/epub+zip=calibre-ebook-viewer.desktop
+application/pdf=firefox.desktop
