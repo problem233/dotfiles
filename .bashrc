@@ -2,6 +2,9 @@
 
 source ~/.environment
 
+set -o noclobber
+shopt -s checkwinsize
+
 export PS1="\[$(tput setaf 6)\]\w\[$(tput setaf 2)\] \\$ \[$(tput sgr0)\]"
 export HISTCONTROL=ignoreboth:erasedups
 export SUDO_EDITOR=vim

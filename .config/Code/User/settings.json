@@ -38,6 +38,8 @@
       "**/.DS_Store": true,
       "**/node_modules": true
   },
+  // diff editor ====================
+  "diffEditor.ignoreTrimWhitespace": true,
   // terminal =======================
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorStyle": "line",
