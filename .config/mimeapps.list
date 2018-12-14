@@ -3,8 +3,8 @@ application/x-shellscript=vim.desktop;
 image/jpeg=firefox.desktop;
 text/plain=visual-studio-code.desktop;wine-extension-txt.desktop;
 application/x-yaml=visual-studio-code.desktop;wine-extension-txt.desktop;
-image/png=geeqie.desktop;
-image/gif=geeqie.desktop;
+image/png=viewnior.desktop;
+image/gif=viewnior.desktop;
 application/zip=xarchiver.desktop;org.gnome.FileRoller.desktop;
 text/markdown=visual-studio-code.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=calibre-ebook-viewer.desktop;
@@ -21,8 +21,8 @@ application/pdf=firefox.desktop;calibre-ebook-viewer.desktop;
 
 [Default Applications]
 application/x-yaml=visual-studio-code.desktop
-image/gif=geeqie.desktop
-image/jpeg=geeqie.desktop
+image/gif=viewnior.desktop
+image/jpeg=viewnior.desktop
 text/plain=visual-studio-code.desktop
 application/vnd.rar=xarchiver.desktop
 text/html=firefox.desktop

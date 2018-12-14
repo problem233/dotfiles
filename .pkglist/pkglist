@@ -44,7 +44,6 @@ flex
 gawk
 gcc
 gcc-libs
-geeqie
 gettext
 git
 glibc
@@ -145,6 +144,7 @@ unzip-iconv
 usbutils
 util-linux
 vi
+viewnior
 vim
 visual-studio-code-bin
 vlc

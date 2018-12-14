@@ -7,6 +7,7 @@ shopt -s checkwinsize
 
 export PS1="\[$(tput setaf 6)\]\w\[$(tput setaf 2)\] \\$ \[$(tput sgr0)\]"
 export HISTCONTROL=ignoreboth:erasedups
+export HISTIGNORE='\: *:\:'
 export SUDO_EDITOR=vim
 if ! xset q &>/dev/null; then
   export EDITOR=vim
