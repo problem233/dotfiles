@@ -115,6 +115,7 @@ pkgconf
 polybar
 primus
 procps-ng
+proxyee-down
 psmisc
 pulseaudio
 pulseaudio-alsa
@@ -127,11 +128,8 @@ reiserfsprogs
 sed
 shadow
 shutter
-smartmontools
 s-nail
 stack-bin
-steam
-steam-native-runtime
 sudo
 sysfsutils
 systemd

@@ -133,8 +133,8 @@ bindsym $mod+l exec fluentlyCloseMon --lock
 bindsym XF86PowerOff exec fluentlyCloseMon
 
 # Light adjustment
-bindsym XF86MonBrightnessUp exec xbacklight + 5 -time 0
-bindsym XF86MonBrightnessDown exec xbacklight - 5 -time 0
+bindsym XF86MonBrightnessUp exec xbacklight + 2 -time 0
+bindsym XF86MonBrightnessDown exec xbacklight - 2 -time 0
 
 # Audio adjustment
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle

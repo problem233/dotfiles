@@ -18,6 +18,7 @@ application/msword=calibre-ebook-viewer.desktop;calibre-gui.desktop;
 application/epub+zip=calibre-ebook-viewer.desktop;
 application/x-executable=visual-studio-code.desktop;
 application/pdf=firefox.desktop;calibre-ebook-viewer.desktop;
+application/x-ns-proxy-autoconfig=visual-studio-code.desktop;
 
 [Default Applications]
 application/x-yaml=visual-studio-code.desktop
