@@ -1,9 +1,0 @@
-#!/bin/bash
-if [ "$1" == --chat ]; then
-  sleep 0.1
-  xdotool key --delay 80 Escape t
-fi
-chars=$(zenity --title 中文输入 --text 中文输入 --width 500 --entry 2>/dev/null)
-sleep 0.2
-xdotool type --delay 80 "$chars"
-[ "$1" == --chat ] && xdotool key Return

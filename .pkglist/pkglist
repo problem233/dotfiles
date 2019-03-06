@@ -60,6 +60,7 @@ inetutils
 intel-ucode
 iproute2
 iputils
+jdk8
 jfsutils
 lantern-bin
 less

@@ -157,7 +157,3 @@ exec --no-startup-id $HOME/.fehbg
 # Lantern
 # See ~/.xprofile
 exec --no-startup-id lantern
-
-# Minecraft IME Input
-bindsym $mod+t exec $HOME/.local/bin/mcinput --chat
-bindsym $mod+Shift+t exec $HOME/.local/bin/mcinput
