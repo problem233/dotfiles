@@ -18,8 +18,8 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #90000000
-background-alt = #17ffffff
+background = #60000000
+background-alt = #a0000000
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #aaa
@@ -54,7 +54,7 @@ modules-right = xbacklight pulseaudio memory cpu wlan eth battery temperature da
 tray-position = right
 tray-padding = 2
 ;tray-transparent = true
-tray-background = #110
+tray-background = #273027
 
 cursor-click = pointer
 cursor-scroll = ns-resize
