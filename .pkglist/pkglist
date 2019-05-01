@@ -31,7 +31,6 @@ fcitx
 fcitx-configtool
 fcitx-gtk2
 fcitx-gtk3
-fcitx-qt4
 fcitx-qt5
 fcitx-rime
 feh
@@ -98,7 +97,7 @@ noto-fonts-extra
 npm
 numlockx
 nvidia
-onedrive-abraunegg-git
+onedrive-abraunegg
 openssh
 otf-fira-code
 otf-nerd-fonts-fira-code

@@ -4,7 +4,7 @@
   // editor =========================
   // "editor.fontFamily": "'Noto Sans Mono CJK SC'", /*
   "editor.fontFamily":
-    "'Fira Code', 'Noto Sans CJK SC', 'FuraCode Nerd Font', monosapce", // */
+    "'Fira Code', 'Noto Sans', 'Noto Sans CJK SC', 'FuraCode Nerd Font', monosapce", // */
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
@@ -22,7 +22,6 @@
   },
   // workbench ======================
   "workbench.colorTheme": "Solarized Dark",
-  "workbench.iconTheme": "vscode-icons",
   "workbench.settings.editor": "json",
   // explorer =======================
   "explorer.confirmDelete": false,
@@ -53,5 +52,4 @@
   // markdown =======================
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
   // vsicons ========================
-  "vsicons.dontShowNewVersionMessage": true,
 }  
