@@ -11,7 +11,6 @@ binutils
 bison
 bumblebee
 bzip2
-calibre
 compton
 coreutils
 cryptsetup
@@ -61,7 +60,6 @@ iproute2
 iputils
 jdk8
 jfsutils
-lantern-bin
 less
 lib32-alsa-plugins
 lib32-libpulse
@@ -127,6 +125,7 @@ qterminal
 reiserfsprogs
 sed
 shadow
+shadowsocksrr-libev-git
 shutter
 s-nail
 stack-bin

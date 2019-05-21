@@ -1,0 +1,12 @@
+[Unit]
+Description=ShadowsocksRR-Libev Client Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/ssrr-local -c %E/ssrr/config.json
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

@@ -1,24 +1,14 @@
 [Added Associations]
-application/x-shellscript=vim.desktop;
-image/jpeg=firefox.desktop;
-text/plain=visual-studio-code.desktop;wine-extension-txt.desktop;
-application/x-yaml=visual-studio-code.desktop;wine-extension-txt.desktop;
+text/plain=visual-studio-code.desktop;
+application/x-yaml=visual-studio-code.desktop;
 image/png=viewnior.desktop;
 image/gif=viewnior.desktop;
-application/zip=xarchiver.desktop;org.gnome.FileRoller.desktop;
+application/zip=xarchiver.desktop;
 text/markdown=visual-studio-code.desktop;
-application/vnd.openxmlformats-officedocument.wordprocessingml.document=calibre-ebook-viewer.desktop;
-application/vnd.openxmlformats-officedocument.wordprocessingml.template=xarchiver.desktop;
 application/json=visual-studio-code.desktop;
-application/vnd.rar=osu-lazer.desktop;xarchiver.desktop;
-application/x-osu-lazer-beatmap=osu-lazer.desktop;
 audio/x-wav=vlc.desktop;
 text/html=firefox.desktop;
-application/msword=calibre-ebook-viewer.desktop;calibre-gui.desktop;
-application/epub+zip=calibre-ebook-viewer.desktop;
-application/x-executable=visual-studio-code.desktop;
-application/pdf=firefox.desktop;calibre-ebook-viewer.desktop;
-application/x-ns-proxy-autoconfig=visual-studio-code.desktop;
+application/pdf=firefox.desktop;
 
 [Default Applications]
 application/x-yaml=visual-studio-code.desktop
@@ -27,5 +17,4 @@ image/jpeg=viewnior.desktop
 text/plain=visual-studio-code.desktop
 application/vnd.rar=xarchiver.desktop
 text/html=firefox.desktop
-application/epub+zip=calibre-ebook-viewer.desktop
 application/pdf=firefox.desktop
