@@ -141,9 +141,13 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 
+# Screenshot
+bindsym Print exec flameshot-wrapper
+bindsym $mod+Print exec flameshot gui
+bindsym $mod+Shift+Print exec flameshot gui -d 5000
+
 # Assignments
 assign [class="Firefox"] workspace $ws2
-for_window [class="Shutter"] floating enable
 assign [class="tim.exe"] workspace $ws10
 for_window [class="tim.exe"] floating enable
 for_window [class="tim.exe"] border none
@@ -154,6 +158,5 @@ exec --no-startup-id compton -b
 # Wallpaper
 exec --no-startup-id $HOME/.fehbg
 
-# Lantern
-# See ~/.xprofile
-exec --no-startup-id lantern
+# Flameshot
+exec --no-startuo-id flameshot

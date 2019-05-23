@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+OUTPUT_DIR=/mnt/Downloads/screenshots
+
+mkdir $OUTPUT_DIR
+
+flameshot full -p $OUTPUT_DIR
+xclip -se c $OUTPUT_DIR/$(ls $OUTPUT_DIR -t | head -n1)

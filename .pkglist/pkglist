@@ -38,6 +38,7 @@ filesystem
 findutils
 firefox
 firefox-i18n-zh-cn
+flameshot
 flex
 gawk
 gcc
@@ -48,6 +49,7 @@ glibc
 grep
 groff
 gtk-engine-murrine
+gvfs
 gzip
 hmcl
 hpfall-git
@@ -58,8 +60,9 @@ inetutils
 intel-ucode
 iproute2
 iputils
-jdk8
+java-openjfx
 jfsutils
+jre8-openjdk
 less
 lib32-alsa-plugins
 lib32-libpulse
@@ -126,7 +129,6 @@ reiserfsprogs
 sed
 shadow
 shadowsocksrr-libev-git
-shutter
 s-nail
 stack-bin
 sudo
@@ -148,6 +150,7 @@ vlc
 which
 wpa_supplicant
 xarchiver
+xclip
 xdotool
 xf86-video-intel
 xfsprogs
