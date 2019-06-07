@@ -157,6 +157,3 @@ exec --no-startup-id compton -b
 
 # Wallpaper
 exec --no-startup-id $HOME/.fehbg
-
-# Flameshot
-exec --no-startuo-id flameshot

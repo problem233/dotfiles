@@ -4,8 +4,7 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 xset -b
 light-locker &
 fcitx
-# For some unknown reason, i3 won't run if lantern start before it.
-# lantern
+flameshot &
 xset m 0 0
 xinput set-prop 'USB OPTICAL MOUSE ' 'libinput Accel Speed' 0.5
 xinput set-prop 'USB OPTICAL MOUSE ' 'libinput Accel Profile Enabled' 0 0
