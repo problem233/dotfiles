@@ -1,0 +1,88 @@
+#!/bin/node
+const fs = require('fs')
+const path = require('path')
+
+const subscribeFile = path.join(process.env.HOME, '.config/ssrr/subscribe.txt')
+const subscribe = fs.readFileSync(subscribeFile).toString().split('\n')[0]
+
+const { spawn } = require('child_process')
+
+{
+  const curl = spawn('curl', [subscribe])
+  let str = ""
+  curl.stdout.on('data', data => { str += data })
+  curl.on('close', () => {
+    const configs = Buffer
+      .from(str, 'base64')
+      .toString()
+      .split('\n')
+      .slice(0, -1)
+      .map(url => ssrrDecode(url))
+    select(configs)
+  })
+}
+
+function select (configs) {
+  const readline = require('readline')
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+    prompt: null
+  })
+  const configNumLen = configs.length.toString().length
+  configs.forEach((config, i) => console.log(
+    `${i.toString().padStart(configNumLen)}:`,
+    config.group, '-', config.remarks,
+    `(${config.server}:${config.server_port})`))
+  rl.question('which? ', answer => {
+    if (answer.match(/^( )*[0-9]( )*$/))
+      write(configs[Number(answer.trim())])
+    else
+      console.log('aborted.')
+    rl.close()
+  })
+}
+
+function write (config) {
+  const result = {
+    ...config,
+    local_address: '127.0.0.1',
+    local_port: 1080,
+    workers: 1
+  }
+  console.log('you selected:', JSON.stringify(result))
+  const configFile = path.join(process.env.HOME, '.config/ssrr/config.json')
+  fs.writeFileSync(configFile, JSON.stringify(result))
+  console.log('restarting service...')
+  spawn('systemctl', ['restart', '--user', 'shadowsocksrr-libev.service'])
+  console.log('done. run `systemctl status --user shadowsocksrr-libev.service` to see the status')
+}
+
+function ssrrDecode (url) {
+  const content = Buffer
+    .from(url.substr(6).replace(/-/g, '+'), 'base64')
+    .toString('ascii')
+  const [
+    server, server_port, protocol, method, obfs,
+    passwdBase64, paramsBase64] = content.split(/:|\/\?/)
+  const password = Buffer
+    .from(passwdBase64.replace(/-/g, '+'), 'base64')
+    .toString('ascii')
+  const paramsEntries = paramsBase64
+    .split('&')
+    .map(p => {
+      const [k, vBase64] = p.split('=')
+      return [k, Buffer
+        .from(vBase64.replace(/-/g, '+'), 'base64')
+        .toString()]
+    })
+  const params = new Map(paramsEntries)
+  return {
+    server, protocol, method, obfs, password,
+    server_port: Number(server_port),
+    obfs_param: params.get('obfsparam') || '',
+    protocol_param: params.get('protoparam') || '',
+    remarks: params.get('remarks') || '',
+    group: params.get('group') || ''
+  }
+}
