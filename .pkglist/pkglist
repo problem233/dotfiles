@@ -116,6 +116,7 @@ pkgconf
 polybar
 primus
 procps-ng
+proxychains-ng
 psmisc
 pulseaudio
 pulseaudio-alsa
