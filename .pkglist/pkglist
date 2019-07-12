@@ -116,7 +116,6 @@ pkgconf
 polybar
 primus
 procps-ng
-proxyee-down
 psmisc
 pulseaudio
 pulseaudio-alsa
@@ -126,6 +125,7 @@ qt5ct
 qt5-styleplugins
 qterminal
 reiserfsprogs
+rsync
 sed
 shadow
 shadowsocksrr-libev-git

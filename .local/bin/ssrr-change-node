@@ -35,7 +35,7 @@ function select (configs) {
     config.group, '-', config.remarks,
     `(${config.server}:${config.server_port})`))
   rl.question('which? ', answer => {
-    if (answer.match(/^( )*[0-9]( )*$/))
+    if (answer.match(/^( )*[0-9]+( )*$/))
       write(configs[Number(answer.trim())])
     else
       console.log('aborted.')
