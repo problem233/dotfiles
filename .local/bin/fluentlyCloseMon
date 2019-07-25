@@ -1,9 +1,5 @@
 #!/bin/bash
-prev_light=$(light -r)
-for i in $(seq 1 50 $prev_light); do
-  light -r -U 50
-  sleep 0.001
-done
+prev_light=$(xbacklight)
+xbacklight = 0
 xset dpms force off
-light -r -S $prev_light
-[ $1 == --lock ] && light-locker-command -l
+xbacklight = $prev_light

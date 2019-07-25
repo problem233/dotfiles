@@ -129,7 +129,7 @@ default_border pixel 1
 default_floating_border pixel 1
 
 # Locker
-bindsym $mod+l exec fluentlyCloseMon --lock
+bindsym $mod+l exec light-locker-command -l
 bindsym XF86PowerOff exec fluentlyCloseMon
 
 # Light adjustment

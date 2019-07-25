@@ -50,5 +50,6 @@
   // haskell ========================
   "haskell.indentationRules.enabled": false,
   // markdown =======================
-  "markdown-preview-enhanced.enableExtendedTableSyntax": true
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }  

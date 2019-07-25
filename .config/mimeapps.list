@@ -9,6 +9,7 @@ application/json=visual-studio-code.desktop;
 audio/x-wav=vlc.desktop;
 text/html=firefox.desktop;
 application/pdf=firefox.desktop;
+application/octet-stream=visual-studio-code.desktop;xarchiver.desktop;
 
 [Default Applications]
 application/x-yaml=visual-studio-code.desktop

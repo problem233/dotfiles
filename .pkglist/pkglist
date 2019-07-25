@@ -21,6 +21,7 @@ dhcpcd
 dialog
 diffutils
 dmenu
+downgrade
 e2fsprogs
 efibootmgr
 elinks
@@ -60,9 +61,7 @@ inetutils
 intel-ucode
 iproute2
 iputils
-java-openjfx
 jfsutils
-jre8-openjdk
 less
 lib32-alsa-plugins
 lib32-libpulse
@@ -81,6 +80,7 @@ linux
 linux-firmware
 logrotate
 lvm2
+lxappearance-gtk3
 m4
 make
 man-db
@@ -113,6 +113,7 @@ pciutils
 pcmanfm
 perl
 pkgconf
+pkgstats
 polybar
 primus
 procps-ng
@@ -139,6 +140,7 @@ systemd-sysvcompat
 tar
 texinfo
 thermald
+ttf-arphic-ukai
 unrar
 unzip-iconv
 usbutils

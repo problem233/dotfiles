@@ -48,7 +48,7 @@ function write (config) {
     ...config,
     local_address: '127.0.0.1',
     local_port: 1080,
-    workers: 1
+    workers: 4
   }
   console.log('you selected:', JSON.stringify(result))
   const configFile = path.join(process.env.HOME, '.config/ssrr/config.json')
