@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Empty trash
+Name[zh]=清空回收站
+Icon=user-trash
+Profiles=profile;
+
+[X-Action-Profile profile]
+Exec=trash-empty
+Name=Default profile

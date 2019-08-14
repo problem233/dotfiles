@@ -15,7 +15,14 @@ else
   export EDITOR='code -w'
 fi
 
+alias clear='clear && xdotool key Ctrl+Shift+X'
+alias clear!='xdotool key Ctrl+Shift+T Ctrl+Prior Ctrl+Shift+W'
 alias ls='ls --color=auto'
 alias la='ls -A --color=auto'
 alias ll='ls -Ahl --color=auto'
 alias :q=exit
+
+function mkd() {
+  mkdir -p $1
+  cd $1
+}

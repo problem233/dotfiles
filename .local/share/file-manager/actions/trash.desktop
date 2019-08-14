@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Trash
+Name[zh]=删除
+Icon=user-trash
+Profiles=profile;
+
+[X-Action-Profile profile]
+Exec=trash %f
+Name=Default profile
