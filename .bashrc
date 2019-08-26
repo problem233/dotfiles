@@ -15,8 +15,7 @@ else
   export EDITOR='code -w'
 fi
 
-alias clear='clear && xdotool key Ctrl+Shift+X'
-alias clear!='xdotool key Ctrl+Shift+T Ctrl+Prior Ctrl+Shift+W'
+alias clear!='clear && xdotool key Ctrl+Shift+X'
 alias ls='ls --color=auto'
 alias la='ls -A --color=auto'
 alias ll='ls -Ahl --color=auto'
@@ -25,4 +24,8 @@ alias :q=exit
 function mkd() {
   mkdir -p $1
   cd $1
+}
+
+function useIdris2() {
+  export PATH=/mnt/Documents/build/idris2/build/bin:$PATH
 }

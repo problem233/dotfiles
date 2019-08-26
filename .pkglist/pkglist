@@ -4,6 +4,7 @@ archlinuxcn-keyring
 bash-completion
 bbswitch
 bumblebee
+chez-scheme
 compton
 deepin-wine-tim
 dmenu
@@ -51,6 +52,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 npm
+ntfs-3g
 numlockx
 nvidia
 openssh
@@ -73,6 +75,7 @@ qterminal
 rsync
 shadowsocksrr-libev-git
 thermald
+trash-cli
 ttf-arphic-ukai
 unrar
 unzip-iconv

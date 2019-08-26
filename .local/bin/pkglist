@@ -7,6 +7,7 @@ IFS=$'\n\t'
 
 PKGLIST=~/.pkglist/pkglist
 NPM_PKGLIST=~/.pkglist/npm_pkglist
+PIP_PKGLIST=~/.pkglist/pip_pkglist
 
 function repo-pkgs { pacman -Slq | sort; }
 function installed-pkgs { pacman -Qq | sort; }
@@ -29,17 +30,28 @@ edit-npm)
 load-npm)
   npm i -g --prefix ~/.local $(< "$NPM_PKGLIST")
   ;;
+uninstall-npm)
+  npm un -g --prefix ~/.local $(< "$NPM_PKGLIST")
+  ;;
+backup-pip)
+  pip list --user --not-required --format freeze > "$PIP_PKGLIST"
+  ;;
+load-pip)
+  pip install --user -r "$PIP_PKGLIST"
+  ;;
 *)
   cat << EOF
 Usage:
   $0 <subcommand>
 
 Subcommands:
-  backup    Backup your pkglist.
-  load      Load your pkglist (repo packages only).
-  load-aur  Load your pkglist (aur packages only).
-  edit-npm  Edit your npm pkglist.
-  load-npm  Load your npm pkglist.
+  backup     Backup your pkglist.
+  load       Load your pkglist (repo packages only).
+  load-aur   Load your pkglist (aur packages only).
+  edit-npm   Edit your npm pkglist.
+  load-npm   Load your npm pkglist.
+  backup-pip Backup your pip pkglist.
+  load-pip   Load your pip pkglist.
 EOF
   ;;
 esac
