@@ -2,7 +2,7 @@ source ~/.environment
 export GDK_DPI_SCALE=1.25 
 export QT_QPA_PLATFORMTHEME="qt5ct"
 xset -b
-light-locker &
+light-locker --no-late-locking &
 fcitx
 flameshot &
 xset m 0 0

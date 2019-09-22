@@ -20,6 +20,13 @@
     "editor.wordWrapColumn": 80,
     "editor.occurrencesHighlight": false,
   },
+  // folding
+  "folding": {
+    "*": {
+      "begin": "{{{",
+      "end": "}}}"
+    },
+  },
   // workbench
   "workbench.colorTheme": "Solarized Dark",
   "workbench.iconTheme": "vscode-icons",

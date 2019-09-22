@@ -5,7 +5,7 @@ password=$(zenity --password --title=pass --text=Password:)
 [ -z "$password" ] && exit
 site=$(zenity --entry --width=500 --title=pass --text=Site:)
 [ -z "$site" ] && exit
-args=$(zenity --entry --width=500 --title=pass --text="Extra arguments:" --entry-text=-c1)
+args=$(zenity --entry --width=500 --title=pass --text="Extra arguments:" --entry-text=-C1)
 res=$(lesspass "$site" "$login" "$password" $args)
 unset password
 if [ "$1" == --show ]; then
