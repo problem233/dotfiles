@@ -37,7 +37,7 @@ SwitchKey=Disabled
 # 启用输入法间切换
 # Available Value:
 # True False
-IMSwitchKey=False
+#IMSwitchKey=True
 # 输入法间切换时包含未激活状态
 # Available Value:
 # True False
