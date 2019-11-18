@@ -152,8 +152,8 @@ assign [class="tim.exe"] workspace $ws10
 for_window [class="tim.exe"] floating enable
 for_window [class="tim.exe"] border none
 
-# Compton
-exec --no-startup-id compton -b
+# Picom
+exec --no-startup-id picom -b
 
 # Wallpaper
 exec --no-startup-id $HOME/.fehbg

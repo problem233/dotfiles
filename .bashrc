@@ -15,7 +15,6 @@ else
   export EDITOR='code -w'
 fi
 
-alias clear!='clear && xdotool key Ctrl+Shift+X'
 alias ls='ls --color=auto'
 alias la='ls -A --color=auto'
 alias ll='ls -Ahl --color=auto'
@@ -29,3 +28,10 @@ function mkd() {
 function useIdris2() {
   export PATH=/mnt/Documents/build/idris2/build/bin:$PATH
 }
+
+alias clear!='clear && xkeys Control_L Shift_L X'
+
+function xshowkey() {
+  xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
+}
+

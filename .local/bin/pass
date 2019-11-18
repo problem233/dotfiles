@@ -11,9 +11,9 @@ unset password
 if [ "$1" == --show ]; then
   zenity --info --width=500 --timeout=15 --no-markup --text="Your password: $res"
 else
-  printf '%s' "$res"  | xsel -b
+  printf '%s' "$res"  | xclip -selection clipboard
   zenity --info --width=500 --timeout=1 --text="Copied! Clipboard will be cleared in 10 seconds..."
   for i in {10..1..-1}; do sleep 1s; done
-  xsel -cb
+  printf '' | xclip -selection clipboard
   zenity --info --width=500 --timeout=1 --text="Clipboard has been cleared."
 fi

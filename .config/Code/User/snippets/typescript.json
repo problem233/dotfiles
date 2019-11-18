@@ -1,6 +1,6 @@
 {
   "import": {
-    "prefix": "import",
-    "body": "import $2 from $1"
+    "prefix": "imp",
+    "body": "import ${2:{}} from '$1'"
   }
 }
