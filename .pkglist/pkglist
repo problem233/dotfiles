@@ -90,6 +90,7 @@ qterminal
 rsync
 shadowsocksrr-libev-git
 systemd
+systemd-sysvcompat
 tar
 thermald
 ttf-arphic-ukai
