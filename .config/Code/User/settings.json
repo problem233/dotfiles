@@ -42,13 +42,15 @@
   // haskell
   "haskell.indentationRules.enabled": false,
   // markdown
+  "markdown-preview-enhanced.breakOnSingleNewLine": false,
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
   // terminal
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.rendererType": "experimentalWebgl",
   // typescript
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.format.semicolons": "remove",
   // window
   "window.titleBarStyle": "custom",
   // workbench
@@ -61,5 +63,6 @@
     "editor.rulers": [],
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80
-  }
+  },
+  "window.zoomLevel": 0
 }  
