@@ -4,7 +4,7 @@ TriggerKey=CTRL_LCTRL
 # 只在用额外切换键取消激活后才使用它进行切换
 # Available Value:
 # True False
-#UseExtraTriggerKeyOnlyWhenUseItToInactivate=True
+UseExtraTriggerKeyOnlyWhenUseItToInactivate=False
 # 额外的激活输入法快捷键
 # Available Value:
 # R_CTRL
@@ -41,7 +41,7 @@ SwitchKey=Disabled
 # 输入法间切换时包含未激活状态
 # Available Value:
 # True False
-#IMSwitchIncludeInactive=False
+IMSwitchIncludeInactive=True
 # 输入法切换键
 # Available Value:
 # CTRL_SHIFT
@@ -58,13 +58,13 @@ IMSwitchHotkey=ALT_SHIFT
 # 切换联想模式
 #RemindSwitchKey=
 # 切换全角
-#FullWidthSwitchKey=
+FullWidthSwitchKey=SHIFT_SPACE SHIFT_SPACE
 # 切换全角标点
-#PuncSwitchKey=CTRL_.
+PuncSwitchKey=CTRL_. CTRL_.
 # 上一页
-PrevPageKey=,
+PrevPageKey=, ,
 # 下一页
-NextPageKey=.
+NextPageKey=. .
 # 选择第二第三候选词
 #SecondThirdCandWordKey=
 # 保存配置及输入历史
@@ -75,6 +75,8 @@ NextPageKey=.
 #PrevWord=SHIFT_TAB
 # 下一个候选词
 #NextWord=TAB
+# Toggle if hide the input window more often
+#HideMoreKey=
 
 [Program]
 # Fcitx 真正启动前延迟的秒数
@@ -144,4 +146,5 @@ CandidateWordNumber=7
 # Available Value:
 # True False
 #HideInputWindowWhenOnlyOneCandidate=False
+
 

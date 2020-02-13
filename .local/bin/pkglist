@@ -15,7 +15,7 @@ function pkglist { sort < "$PKGLIST"; }
 
 case ${1:-help} in
 backup)
-  comm -23 <(pacman -Qeq | sort) <(pacman -Qgq base base-devel | sort) > "$PKGLIST"
+  comm -23 <(pacman -Qeq | sort) <(pacman -Qgq base-devel | sort) > "$PKGLIST"
   ;;
 load)
   sudo pacman -S --needed $(comm -12 <(pkglist) <(repo-pkgs))

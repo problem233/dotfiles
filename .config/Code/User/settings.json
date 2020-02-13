@@ -41,9 +41,13 @@
   "git.enableSmartCommit": true,
   // haskell
   "haskell.indentationRules.enabled": false,
+  // html
+  "html.validate.scripts": false,
+  "html.validate.styles": false,
   // markdown
   "markdown-preview-enhanced.breakOnSingleNewLine": false,
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "markdown-preview-enhanced.enableScriptExecution": true,
   // terminal
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
@@ -60,9 +64,14 @@
   // language-specific
   "[markdown]": {
     "editor.occurrencesHighlight": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    },
     "editor.rulers": [],
+    "editor.wordBasedSuggestions": false,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80
-  },
-  "window.zoomLevel": 0
+  }
 }  

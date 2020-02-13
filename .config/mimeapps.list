@@ -18,3 +18,4 @@ text/plain=visual-studio-code.desktop
 application/vnd.rar=xarchiver.desktop
 text/html=firefox.desktop
 application/pdf=firefox.desktop
+inode/directory=pcmanfm.desktop
