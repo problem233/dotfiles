@@ -50,7 +50,7 @@
   "markdown-preview-enhanced.enableScriptExecution": true,
   // terminal
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.rendererType": "experimentalWebgl",
   // typescript

@@ -14,7 +14,7 @@
   // }
   "dict item noun": {
     "prefix": "mc",
-    "body": "- **$1** [$3]**【$2】**（名）"
+    "body": "- **$1** [$3]**【$2】**（${4:名}）$5*$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE*"
   },
   "div": {
     "prefix": "div",
