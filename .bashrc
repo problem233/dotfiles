@@ -5,7 +5,7 @@ shopt -s expand_aliases
 shopt -s checkwinsize
 
 export PATH=~/.local/bin:$PATH
-export LANG="en_US.UTF-8"
+export LANG="zh_CN.UTF-8"
 
 export PS1="\[$(tput setaf 6)\]\w\[$(tput setaf 2)\] \\$ \[$(tput sgr0)\]"
 

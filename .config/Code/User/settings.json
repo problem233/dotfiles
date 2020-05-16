@@ -5,8 +5,7 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
-  //"editor.fontFamily": "'Noto Sans Mono CJK SC'", /*
-  "editor.fontFamily": "'Fira Code', 'Noto Sans', 'Noto Sans CJK SC', 'FuraCode Nerd Font', monosapce", // */
+  "editor.fontFamily": "'Fira Code', '等线', monosapce",
   "editor.fontLigatures": true,
   "editor.highlightActiveIndentGuide": true,
   "editor.minimap.enabled": false,
