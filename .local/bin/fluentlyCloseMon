@@ -1,5 +1,0 @@
-#!/bin/bash
-prev_light=$(xbacklight)
-xbacklight = 0
-xset dpms force off
-xbacklight = $prev_light
