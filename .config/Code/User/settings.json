@@ -32,6 +32,7 @@
   "folding": {
     "*": {
       "begin": "{{{",
+      "middle": "|||",
       "end": "}}}"
     },
   },
@@ -69,6 +70,12 @@
       "comments": false,
       "strings": false
     },
+    "editor.rulers": [],
+    "editor.wordBasedSuggestions": false,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80
+  },
+  "[plaintext]": {
     "editor.rulers": [],
     "editor.wordBasedSuggestions": false,
     "editor.wordWrap": "bounded",

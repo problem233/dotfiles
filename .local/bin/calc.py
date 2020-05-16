@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import traceback
 
 class Calc:
   def __init__(self, env = {}):
@@ -7,7 +8,16 @@ class Calc:
       '__file__': None,
       '__builtins__': None,
       'math': __import__('math'),
-      'names': lambda: [name for name in self.env]
+      'names': lambda: [name for name in self.env],
+      'load': self.load,
+      'abs': abs,
+      'divmod': divmod,
+      'bin': bin,
+      'oct': oct,
+      'hex': hex,
+      'min': min,
+      'max': max,
+      'round': round
     }
     self.env.update(env)
 
@@ -16,12 +26,21 @@ class Calc:
     if len(code) == 0: return
     if code[0] == '#': return
     if code.find('_') != -1:
-      print('禁止下划线：', code)
+      if isPrint: print('禁止下划线！')
+      else: print('禁止下划线：', code)
       return
     try:
       result = eval(code, self.env)
       if isPrint: print(result)
-    except: print('错误：', code)
+    except BaseException as e:
+      def common():
+        print('错误！')
+        traceback.print_exc(limit = 0)
+      if isPrint:
+        if e.__class__.__name__ == 'SyntaxError': print('语法错误！')
+        elif e.__class__.__name__ == 'TypeError' and e.args[0] == '\'NoneType\' object is not subscriptable': print('变量未定义！')
+        else: common()
+      else: common()
 
   def load(self, path):
     with open(path) as f:
